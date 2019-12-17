@@ -1,0 +1,1 @@
+Projeto padrão para criação de pacotes React JS

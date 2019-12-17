@@ -1,0 +1,26 @@
+{
+  "name": "libraryreactjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Lucas Lima",
+  "license": "MIT",
+  "scripts": {
+    "start": "./node_modules/.bin/parcel src/docs/index.html",
+    "build": "./node_modules/.bin/webpack --mode=production",
+    "build:docs": "./node_modules/.bin/parcel build src/docs/index.js -d ./dist/docs && cp src/docs/index.html dist/docs/index.html"
+  },
+  "peerDependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.0-beta",
+    "parcel-bundler": "^1.12.4",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
